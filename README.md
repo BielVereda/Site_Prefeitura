@@ -16,18 +16,7 @@ Site desenvolvido para apresentar informações sobre **parcerias da Prefeitura 
 - CSS3 (customizado)  
 - [Bootstrap 5](https://getbootstrap.com/)  
 - [Font Awesome](https://fontawesome.com/)  
-- [Google Fonts - Montserrat](https://fonts.google.com/specimen/Montserrat)  
-
-## 📂 Estrutura do projeto
-/
-/ ├── index.html
-/ └── src
-/ ├── assets
-/ │ ├── styles
-/ │ │ └── style.css
-/ │ ├── images
-/ │ └── pages
-/ │ └── coming-soon.html
+- [Google Fonts - Montserrat](https://fonts.google.com/specimen/Montserrat)
 
 ## 🔗 Prévia do projeto
 <p align="center">
@@ -72,18 +61,6 @@ Font Awesome
 
 Google Fonts - Montserrat
 
-📂 Project structure
-css
-Copiar código
-/
-├── index.html
-└── src
-    ├── assets
-    │   ├── styles
-    │   │   └── style.css
-    │   ├── images
-    │   └── pages
-    │       └── coming-soon.html
 🔗 Live preview
 <p align="center"> <a href="https://site-prefeitura.vercel.app" target="_blank"> <img src="https://img.shields.io/badge/🔗%20Visit%20the%20site-28a745?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Preview"/> </a> </p>
 ⚙️ How to run
