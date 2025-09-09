@@ -5,7 +5,6 @@
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
   <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
-  <img src="https://img.shields.io/badge/Made%20with-❤️-ff69b4?style=for-the-badge" alt="Made with Love"/>
 </p>
 
 Site desenvolvido para apresentar informações sobre **parcerias da Prefeitura de São Paulo**, com indicadores, projetos em andamento e dados visuais.
@@ -62,7 +61,7 @@ Este projeto foi desenvolvido para fins educacionais e institucionais.
 © 2025 Secretaria Executiva de Desestatização e Parcerias - Município de São Paulo.
 
 📊 Observa Sampa Partnerships (EN)
-<p align="center"> <img src="https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel Deploy"/> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/> <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"/> <img src="https://img.shields.io/badge/Made%20with-❤️-ff69b4?style=for-the-badge" alt="Made with Love"/> </p>
+<p align="center"> <img src="https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel Deploy"/> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/> <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"> </p>
 Website developed to present information about São Paulo City Hall partnerships, including indicators, ongoing projects and visual data.
 
 🚀 Technologies used
