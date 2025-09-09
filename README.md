@@ -63,15 +63,16 @@ Font Awesome
 
 Google Fonts - Montserrat
 
-##🔗 Live preview
+## 🔗 Live preview
 <p align="center"> <a href="https://site-prefeitura.vercel.app" target="_blank"> <img src="https://img.shields.io/badge/🔗%20Visit%20the%20site-28a745?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Preview"/> </a> </p>
 
-##⚙️ How to run
+## ⚙️ How to run
 Clone the repository:
 git clone https://github.com/seu-usuario/observa-sampa-parcerias.git
 Open the file index.html directly in your browser, or use a Live Server extension (VS Code).
 
-##📌 Features
+---
+📌 Features
 Homepage with hero section.
 
 Categorized indicators (Education, Urbanism, Sports, Health, etc.).
