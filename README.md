@@ -13,10 +13,10 @@ Site desenvolvido para apresentar informações sobre **parcerias da Prefeitura 
 
 ## 🚀 Tecnologias utilizadas
 - HTML5  
-- CSS3 (customizado)  
-- [Bootstrap 5](https://getbootstrap.com/)  
-- [Font Awesome](https://fontawesome.com/)  
-- [Google Fonts - Montserrat](https://fonts.google.com/specimen/Montserrat)
+- CSS3
+- Bootstrap 5
+- Font Awesome 
+- Google Fonts - Montserrat
 
 ## 🔗 Prévia do projeto
 <p align="center">
@@ -53,15 +53,11 @@ Este projeto foi desenvolvido para fins educacionais e institucionais.
 Website developed to present information about São Paulo City Hall partnerships, including indicators, ongoing projects and visual data.
 
 ## 🚀 Technologies used
-HTML5
-
-CSS3 (customized)
-
-Bootstrap 5
-
-Font Awesome
-
-Google Fonts - Montserrat
+- HTML5  
+- CSS3
+- Bootstrap 5
+- Font Awesome 
+- Google Fonts - Montserrat
 
 ## 🔗 Live preview
 <p align="center"> <a href="https://site-prefeitura.vercel.app" target="_blank"> <img src="https://img.shields.io/badge/🔗%20Visit%20the%20site-28a745?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Preview"/> </a> </p>
