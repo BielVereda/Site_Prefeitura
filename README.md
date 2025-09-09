@@ -78,6 +78,7 @@ Illustrative map.
 Ongoing projects cards.
 
 Responsive layout with Bootstrap.
+
 ---
 📝 License
 This project was developed for educational and institutional purposes.
