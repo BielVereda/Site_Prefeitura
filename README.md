@@ -20,17 +20,14 @@ Site desenvolvido para apresentar informações sobre **parcerias da Prefeitura 
 
 ## 📂 Estrutura do projeto
 /
-├── index.html
-└── src
-├── assets
-│ ├── styles
-│ │ └── style.css
-│ ├── images
-│ └── pages
-│ └── coming-soon.html
-
-perl
-Copiar código
+/ ├── index.html
+/ └── src
+/ ├── assets
+/ │ ├── styles
+/ │ │ └── style.css
+/ │ ├── images
+/ │ └── pages
+/ │ └── coming-soon.html
 
 ## 🔗 Prévia do projeto
 <p align="center">
