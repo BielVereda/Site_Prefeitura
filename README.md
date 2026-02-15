@@ -14,7 +14,7 @@ O projeto foi construído do zero, priorizando performance, organização e fide
     * **Layouts Modernos**: Uso estratégico de **Flexbox** e **CSS Grid**.
     * **Responsividade**: Mobile First otimizado para telas de 360x800.
     * **Efeitos Visuais**: Backdrop-filter, transições suaves e sombras dinâmicas.
-* **JavaScript (Vanilla)**:
+* **JavaScript**:
     * **Menu Hambúrguer**: Lógica de navegação mobile com efeito de transição.
     * **Carrossel de Notícias**: Sistema dinâmico com suporte a setas e indicadores (dots).
 * **Bibliotecas**: Font Awesome 6 (Ícones) e Google Fonts (Montserrat).
