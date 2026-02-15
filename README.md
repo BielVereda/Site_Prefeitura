@@ -1,86 +1,74 @@
-# 📊 Observa Sampa Parcerias
+# 🏛️ Observa Sampa - Portal de Notícias
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel Deploy"/>
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/>
-  <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap"/>
-</p>
-
-Site desenvolvido para apresentar informações sobre **parcerias da Prefeitura de São Paulo**, com indicadores, projetos em andamento e dados visuais.
+Interface moderna e responsiva desenvolvida para o **Observa Sampa**, focada na transparência e divulgação de indicadores e notícias da Prefeitura Municipal de São Paulo.
 
 ---
 
-## 🚀 Tecnologias utilizadas
-- HTML5  
-- CSS3
-- Bootstrap 5
-- Font Awesome 
-- Google Fonts - Montserrat
+## 🚀 Tecnologias Utilizadas
 
-## 🔗 Prévia do projeto
-<p align="center">
-  <a href="https://site-prefeitura.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/🔗%20Acessar%20o%20site-007bff?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Prévia do site"/>
-  </a>
-</p>
+O projeto foi construído do zero, priorizando performance, organização e fidelidade ao design:
 
-## ⚙️ Como executar
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/observa-sampa-parcerias.git
-Abra o arquivo index.html diretamente no navegador, ou utilize uma extensão de Live Server (VS Code).
+* **HTML5**: Estruturação semântica para melhor acessibilidade e SEO.
+* **CSS3 (Modularizado)**:
+    * **Variáveis Globais (`:root`)**: Gerenciamento centralizado de cores e sombras.
+    * **Layouts Modernos**: Uso estratégico de **Flexbox** e **CSS Grid**.
+    * **Responsividade**: Mobile First otimizado para telas de 360x800.
+    * **Efeitos Visuais**: Backdrop-filter, transições suaves e sombras dinâmicas.
+* **JavaScript (Vanilla)**:
+    * **Menu Hambúrguer**: Lógica de navegação mobile com efeito de transição.
+    * **Carrossel de Notícias**: Sistema dinâmico com suporte a setas e indicadores (dots).
+* **Bibliotecas**: Font Awesome 6 (Ícones) e Google Fonts (Montserrat).
 
 ---
-📌 Funcionalidades
-Página inicial com hero section.
 
-Indicadores categorizados (Educação, Zeladoria, Esporte, Saúde etc.).
+## 📂 Estrutura de Arquivos
 
-Mapa ilustrativo.
-
-Cards de projetos em andamento.
-
-Estrutura responsiva via Bootstrap.
-
----
-📝 Licença
-Este projeto foi desenvolvido para fins educacionais e institucionais.
-© 2025 Secretaria Executiva de Desestatização e Parcerias - Município de São Paulo.
-
----
-# 📊 Observa Sampa Partnerships (EN)
-<p align="center"> <img src="https://img.shields.io/badge/Deploy-Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel Deploy"/> <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"/> <img src="https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"> </p>
-Website developed to present information about São Paulo City Hall partnerships, including indicators, ongoing projects and visual data.
-
-## 🚀 Technologies used
-- HTML5  
-- CSS3
-- Bootstrap 5
-- Font Awesome 
-- Google Fonts - Montserrat
-
-## 🔗 Live preview
-<p align="center"> <a href="https://site-prefeitura.vercel.app" target="_blank"> <img src="https://img.shields.io/badge/🔗%20Visit%20the%20site-28a745?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Preview"/> </a> </p>
-
-## ⚙️ How to run
-Clone the repository:
-git clone https://github.com/seu-usuario/observa-sampa-parcerias.git
-Open the file index.html directly in your browser, or use a Live Server extension (VS Code).
+```bash
+├── 📄 index.html
+└── 📂 src/
+    ├── 📂 assets/
+    │   └── 📂 images/
+    │       ├── 📂 jpg/
+    │       ├── 📂 png/
+    │       └── 📂 svg/
+    ├── 📂 pages/
+    │   ├── 📂 coming-soon/
+    │   │     ├── 📄 coming-soon.css
+    │   │     └── 📄 coming-soon.html
+    │   ├── 📂 noticias/
+    │   └── 📄 noticias.html
+    ├── 📂 scripts/
+    │   ├── 📄 carrossel-noticias.js
+    │   ├── 📄 carrossel.js
+    │   └── 📄 menu-hamburguer.js
+    └── 📂 styles/
+        ├── 📄 style.css
+        └── 📄 noticias.css
+```
 
 ---
-📌 Features
-Homepage with hero section.
+## 📱 Funcionalidades Principais
 
-Categorized indicators (Education, Urbanism, Sports, Health, etc.).
+- Menu All-Black: Navegação mobile que se integra ao header, deslizando sobre o conteúdo.
+- Slider Institucional: Carrossel responsivo com indicadores de estado ativo e botões de navegação.
+- Cards de Conteúdo: Design "puro" com bordas arredondadas e elevação visual via box-shadow.
+- Breadcrumbs Dinâmicos: Trilha de navegação para facilitar a orientação do usuário.
+---
+ACESSO AO SITE: https://site-prefeitura.vercel.app/
+---
+## 📸 Demonstração Visual Desktop/Mobile
 
-Illustrative map.
+**Página Inicial (Home):**
 
-Ongoing projects cards.
+<img width="192" height="382" alt="screencapture-127-0-0-1-5500-Site-Prefeitura-index-html-2026-02-15-07_31_10" src="https://github.com/user-attachments/assets/70a84fbd-c423-4f3a-b2f6-3ea68a67f8b8" />
 
-Responsive layout with Bootstrap.
+<img width="96" height="499" alt="screencapture-127-0-0-1-5500-Site-Prefeitura-index-html-2026-02-15-07_34_32" src="https://github.com/user-attachments/assets/9da92c0e-33a6-4f48-87ab-38b5f693aeec" />
+
+**Página de Notícias:**
+
+<img width="192" height="290" alt="screencapture-127-0-0-1-5500-Site-Prefeitura-src-pages-noticias-html-2026-02-15-07_35_22" src="https://github.com/user-attachments/assets/611bfcc9-3bbb-44b6-940d-b7722f940dd3" />
+
+<img width="96" height="319" alt="screencapture-127-0-0-1-5500-Site-Prefeitura-src-pages-noticias-html-2026-02-15-07_36_42" src="https://github.com/user-attachments/assets/dba0d98c-fa33-4251-9b4b-f43db08a7b05" />
 
 ---
-📝 License
-This project was developed for educational and institutional purposes.
-© 2025 Executive Secretariat for Privatization and Partnerships - São Paulo Municipality.
+Créditos **© 2026 Prefeitura Municipal de São Paulo** Criado com ⚡ por **BielVereda**
