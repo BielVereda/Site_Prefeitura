@@ -1035,3 +1035,11 @@ RESPONSIVIDADE (TABLET E MOBILE)
         text-decoration: none;
     }
 }
+
+@media (max-width: 768px) {
+    .footer-logos {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
