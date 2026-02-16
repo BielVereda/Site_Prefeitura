@@ -65,6 +65,10 @@
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
+    #mobile-menu-btn i {
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
     .recent-news-list h3 {
         font-size: 1.8rem;
     }

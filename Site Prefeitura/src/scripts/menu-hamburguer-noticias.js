@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const navMenu = document.getElementById("nav-menu");
     const menuIcon = menuBtn.querySelector("i");
 
-    if (!menuBtn || !navMenu) return; // Segurança caso o ID mude
+    if (!menuBtn || !navMenu) return;
 
     menuBtn.addEventListener("click", (e) => {
         e.preventDefault();
@@ -11,17 +11,15 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const isOpen = navMenu.classList.contains("active");
         
-        // Troca o ícone
         if (isOpen) {
             menuIcon.classList.replace("fa-bars", "fa-xmark");
-            document.body.style.overflow = "hidden"; // Trava o scroll do site ao abrir
+            document.body.style.overflow = "hidden";
         } else {
             menuIcon.classList.replace("fa-xmark", "fa-bars");
             document.body.style.overflow = "auto";
         }
     });
 
-    // Fecha ao clicar em qualquer link
     document.querySelectorAll(".nav-menu a").forEach(link => {
         link.addEventListener("click", () => {
             navMenu.classList.remove("active");

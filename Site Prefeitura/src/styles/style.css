@@ -346,7 +346,6 @@ ul {
 /* Indicadores Gerais (Mapa e Stats) */
 .general-indicators-wrapper {
     display: flex;
-    flex-direction: column;
     gap: 1.5rem;
     align-items: stretch;
 }
@@ -471,9 +470,9 @@ ul {
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
 }
 
 .project-card {
@@ -485,6 +484,7 @@ ul {
     border-bottom: 4px solid var(--ind-green);
     padding-bottom: 0.25rem;
     cursor: pointer;
+    width: 300px;
 }
 
 .project-card:hover {
@@ -551,7 +551,6 @@ ul {
 
 .footer-logos {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     gap: 3rem;
@@ -778,50 +777,73 @@ ul {
     cursor: pointer;
 }
 
-@media (min-width: 480px) {
-    .breadcrumb {
-        margin-top: 50px;
+@media (min-width: 1024px) {
+    .indicators-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .carousel-inner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .carousel-image-box {
+        flex: none;
+        height: 250px;
+        width: 100%;
+    }
+
+    .carousel-text-box {
+        padding: 2rem 1.5rem;
         text-align: center;
-        padding: 0 20px;
+        align-items: center;
     }
 
-    .content-card {
-        margin: -40px 15px 0 15px;
-        padding: 20px;
-        border-radius: 30px;
+    .news-tag {
+        align-self: center;
     }
 
-    .main-banner {
-        height: 200px;
-        border-radius: 20px;
+    .news-title {
+        font-size: 1.4rem;
     }
 
-    .purple-notice-box {
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 20px;
-    }
-
-    .purple-notice-box h2 {
-        font-size: 1.1rem;
-    }
-
-    .purple-notice-box p {
+    .news-subtitle {
         font-size: 0.9rem;
     }
 
-    .recent-news-list h3 {
-        font-size: 1.3rem;
+    .footer image {
+        align-items: center;
     }
 
-    .news-item p {
-        font-size: 1rem;
+    .hero-brand-img {
+        max-height: 250px;
     }
 }
 
 @media (max-width: 768px) {
     .general-indicators-wrapper {
         flex-direction: row;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 
     .mobile-menu-icon {
@@ -881,6 +903,7 @@ ul {
         align-items: center;
         justify-content: center;
         text-align: center;
+        flex-direction: column;
     }
 
     .imagem-principal {
@@ -891,62 +914,130 @@ ul {
     .hero-brand-img {
         max-width: 300px;
     }
+
+    body #nav-menu {
+        display: flex !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 85vh !important;
+        background: rgba(13, 12, 17, 0.98) !important;
+        backdrop-filter: blur(10px);
+
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        opacity: 0 !important;
+        visibility: hidden !important;
+        transform: translateY(-20px) !important;
+
+        transition:
+            transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+            opacity 0.4s ease,
+            visibility 0.4s !important;
+
+        z-index: 9999 !important;
+    }
+
+    body #nav-menu.active {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+    }
+
+    #nav-menu li {
+        margin: 1.5rem 0 !important;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: all 0.4s ease;
+    }
+
+    #nav-menu.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #nav-menu li {
+        display: block !important;
+        margin: 0.8rem 0 !important;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    #nav-menu.active li {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #nav-menu.active li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    #nav-menu.active li:nth-child(2) {
+        transition-delay: 0.15s;
+    }
+
+    #nav-menu.active li:nth-child(3) {
+        transition-delay: 0.2s;
+    }
+
+    #nav-menu.active li:nth-child(4) {
+        transition-delay: 0.25s;
+    }
+
+    #nav-menu.active li:nth-child(5) {
+        transition-delay: 0.3s;
+    }
+
+    #nav-menu.active li:nth-child(6) {
+        transition-delay: 0.35s;
+    }
+
+    #nav-menu.active li:nth-child(7) {
+        transition-delay: 0.4s;
+    }
 }
 
-@media (max-width: 900px) {
-
-    .carousel-btn {
-        display: none;
-    }
-
-    .carousel-inner {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .carousel-image-box {
-        flex: none;
-        height: 250px;
-        width: 100%;
-    }
-
-    .carousel-text-box {
-        padding: 2rem 1.5rem;
+@media (max-width: 480px) {
+    .breadcrumb {
+        margin-top: 50px;
         text-align: center;
-        align-items: center;
+        padding: 0 20px;
     }
 
-    .news-tag {
-        align-self: center;
+    .content-card {
+        margin: -40px 15px 0 15px;
+        padding: 20px;
+        border-radius: 30px;
     }
 
-    .news-title {
-        font-size: 1.4rem;
+    .main-banner {
+        height: 200px;
+        border-radius: 20px;
     }
 
-    .news-subtitle {
+    .purple-notice-box {
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 20px;
+    }
+
+    .purple-notice-box h2 {
+        font-size: 1.1rem;
+    }
+
+    .purple-notice-box p {
         font-size: 0.9rem;
     }
 
-    .footer image {
-        align-items: center;
+    .recent-news-list h3 {
+        font-size: 1.3rem;
     }
 
-    .hero-brand-img {
-        max-height: 250px;
-    }
-}
-
-@media (min-width: 1024px) {
-    .indicators-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .nav-menu {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: none;
+    .news-item p {
+        font-size: 1rem;
     }
 }
