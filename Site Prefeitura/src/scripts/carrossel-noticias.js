@@ -1,4 +1,3 @@
-// Dados das notícias extraídos do seu PDF (Página 2 e 3)
 const listaNoticias = [
     {
         img: "../assets/images/jpg/ibirapuera.jpg",
@@ -19,7 +18,6 @@ const listaNoticias = [
 
 let noticiaAtual = 0;
 
-// Seleção dos elementos (mantendo os IDs que você já usa)
 const elementoImg = document.getElementById("carousel-img");
 const elementoTitulo = document.getElementById("news-title");
 const elementoSubtitulo = document.getElementById("news-subtitle");
@@ -29,25 +27,23 @@ const btnProximo = document.getElementById("btn-next");
 
 function atualizarCarrossel(index) {
     noticiaAtual = index;
-
-    // 1. Troca a imagem
     elementoImg.src = listaNoticias[noticiaAtual].img;
-
-    // 2. Troca o texto dentro do bloco roxo
     elementoTitulo.innerText = listaNoticias[noticiaAtual].titulo;
     elementoSubtitulo.innerText = listaNoticias[noticiaAtual].subtitulo;
 
-    // 3. Atualiza os pontos (dots)
     pontos.forEach((ponto, i) => {
-        if (i === noticiaAtual) {
-            ponto.classList.add("active", "filled");
-        } else {
-            ponto.classList.remove("active", "filled");
-        }
+        ponto.classList.toggle("active", i === noticiaAtual);
     });
 }
 
-// Eventos de clique
+// --- NOVO: Clique nas Bolinhas ---
+pontos.forEach((ponto, index) => {
+    ponto.addEventListener("click", () => {
+        atualizarCarrossel(index);
+    });
+});
+
+// Eventos de Setas
 btnProximo.addEventListener("click", () => {
     let proximo = (noticiaAtual + 1) % listaNoticias.length;
     atualizarCarrossel(proximo);
@@ -58,7 +54,33 @@ btnAnterior.addEventListener("click", () => {
     atualizarCarrossel(anterior);
 });
 
-// Troca automática a cada 7 segundos
+// --- NOVO: Lógica de Deslizar (Swipe) ---
+let touchStartX = 0;
+let touchEndX = 0;
+
+const banner = document.querySelector('.main-banner');
+
+banner.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+}, {passive: true});
+
+banner.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleGesture();
+}, {passive: true});
+
+function handleGesture() {
+    if (touchEndX < touchStartX - 50) {
+        // Deslizou para a esquerda -> Próximo
+        btnProximo.click();
+    }
+    if (touchEndX > touchStartX + 50) {
+        // Deslizou para a direita -> Anterior
+        btnAnterior.click();
+    }
+}
+
+// Troca automática
 setInterval(() => {
     btnProximo.click();
 }, 7000);

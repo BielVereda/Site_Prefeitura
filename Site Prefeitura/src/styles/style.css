@@ -661,8 +661,8 @@ ul {
 }
 
 /* =========================================
-   CARROSSEL DE NOTÍCIAS (HERO STYLE)
-   ========================================= */
+CARROSSEL DE NOTÍCIAS (HERO STYLE)
+========================================= */
 
 /* --- Container Principal --- */
 .news-container {
@@ -827,7 +827,7 @@ ul {
 
 /* --- Animação de Fade (Troca de Slide) --- */
 .fade-anim {
-    animation: fadeEffect 0.6s ease-out;
+    animation: fadeEffect 0.5s ease-out;
 }
 
 @keyframes fadeEffect {
@@ -842,9 +842,35 @@ ul {
     }
 }
 
-/* =========================================
-RESPONSIVIDADE (TABLET E MOBILE)
-========================================= */
+.fade-anim {
+    animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Menu hambúrguer escondido por padrão no desktop */
+.mobile-menu-icon {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+
+/* RESPONSIVIDADE */
+
 @media (max-width: 900px) {
 
     .carousel-btn {
@@ -883,32 +909,6 @@ RESPONSIVIDADE (TABLET E MOBILE)
     .footer image{
         align-items: center;
     }
-}
-
-.fade-anim {
-    animation: fadeEffect 0.5s;
-}
-
-@keyframes fadeEffect {
-    from {
-        opacity: 0.4;
-        transform: translateY(5px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Menu hambúrguer escondido por padrão no desktop */
-.mobile-menu-icon {
-    display: none;
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1.8rem;
-    cursor: pointer;
 }
 
 @media (max-width: 768px) {
