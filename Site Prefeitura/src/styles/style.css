@@ -285,7 +285,6 @@ ul {
     font-weight: 500;
 }
 
-/* --- Grid de Indicadores --- */
 .indicators-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -420,7 +419,6 @@ ul {
     flex-shrink: 0;
 }
 
-/* Classes utilitárias para cores de fundo */
 .bg-leg-blue {
     background-color: var(--leg-blue);
 }
@@ -472,7 +470,6 @@ ul {
     display: block;
 }
 
-/* --- Projetos --- */
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr;
