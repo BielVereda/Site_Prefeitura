@@ -1,5 +1,7 @@
+/* IMPORTANDO O CSS BASE */
 @import url("./../../styles/style.css");
 
+/* BASE */
 body {
   background-color: #f8f9fa;
   display: flex;
@@ -9,6 +11,7 @@ body {
   text-align: center;
   flex-direction: column;
 }
+
 .coming-soon-container {
   max-width: 600px;
   padding: 2rem;
@@ -16,19 +19,26 @@ body {
   background: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* TEXTOS */
 .coming-soon-title {
   font-size: 3rem;
   font-weight: 700;
   color: #ed8000;
 }
+
 .coming-soon-subtitle {
   font-size: 1.25rem;
   color: #6c757d;
   margin-top: 1rem;
 }
+
+/* LOGO PREFEITURA */
 .logo {
   margin-bottom: 2rem;
 }
+
+/* BOTÃO */
 .btn-home {
   margin-top: 2rem;
   background-color: #ed8000;
@@ -38,6 +48,7 @@ body {
   text-decoration: none;
   font-weight: 600;
 }
+
 .btn-home:hover {
   background-color: #6d3b03;
   color: #ffffff;

@@ -1,4 +1,4 @@
-/* --- Variáveis e Reset --- */
+/* VARIÁVEIS */
 :root {
     --orange-custom: #ff9100;
     --orange-hover: #a45f05;
@@ -20,7 +20,7 @@
     --leg-green: #359238;
     --leg-orange: #ed8000;
 
-    /* Sombras */
+    /* SOMBRAS */
     --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.08);
     --shadow-card-hover: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
@@ -48,7 +48,6 @@ ul {
     list-style: none;
 }
 
-/* --- Utilitários --- */
 .container {
     width: 100%;
     max-width: 1024px;
@@ -60,7 +59,7 @@ ul {
     text-align: center;
 }
 
-/* --- Header --- */
+/* HEADER */
 .hero-wrapper {
     position: relative;
     width: 100%;
@@ -119,18 +118,7 @@ ul {
     cursor: pointer;
 }
 
-/* Responsividade Header Desktop */
-@media (min-width: 1024px) {
-    .nav-menu {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: none;
-    }
-}
-
-/* --- Hero Section --- */
+/* HERO */
 .hero-content {
     position: relative;
     z-index: 10;
@@ -178,14 +166,14 @@ ul {
     border-radius: 0.25rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-card-hover);
 }
 
 .btn-primary:hover {
     background-color: var(--orange-hover);
 }
 
-/* --- Seções Gerais --- */
+/* Seções Gerais*/
 .section-gray {
     background-color: var(--light-gray);
     padding: 2.5rem 0;
@@ -215,7 +203,7 @@ ul {
     margin-bottom: 1.5rem;
 }
 
-/* --- Notícias e Carrossel (Estilo Base) --- */
+/* Notícias e Carrossel (Estilo Base) */
 .news-container {
     display: flex;
     flex-direction: column;
@@ -304,12 +292,6 @@ ul {
     gap: 1rem;
 }
 
-@media (min-width: 1024px) {
-    .indicators-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
 .indicator-card {
     background: white;
     border-radius: 0.75rem;
@@ -362,18 +344,12 @@ ul {
     border-color: var(--ind-pink);
 }
 
-/* --- Indicadores Gerais (Mapa e Stats) --- */
+/* Indicadores Gerais (Mapa e Stats) */
 .general-indicators-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     align-items: stretch;
-}
-
-@media (min-width: 768px) {
-    .general-indicators-wrapper {
-        flex-direction: row;
-    }
 }
 
 .map-card,
@@ -383,14 +359,6 @@ ul {
     border-radius: 1rem;
     box-shadow: var(--shadow-card);
     padding: 1.5rem;
-}
-
-@media (min-width: 768px) {
-
-    .map-card,
-    .stats-card {
-        width: 50%;
-    }
 }
 
 .map-content {
@@ -511,12 +479,6 @@ ul {
     gap: 1.5rem;
 }
 
-@media (min-width: 640px) {
-    .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
 .project-card {
     background: white;
     border-radius: 0.75rem;
@@ -559,7 +521,7 @@ ul {
     font-size: 0.875rem;
 }
 
-/* --- Footer --- */
+/* FOOTER */
 .main-footer {
     background-color: var(--footer-blue);
     padding-top: 2.5rem;
@@ -601,13 +563,6 @@ ul {
     margin-bottom: 1.5rem;
 }
 
-@media (min-width: 768px) {
-    .footer-logos {
-        flex-direction: row;
-        gap: 6rem;
-    }
-}
-
 .footer-logo {
     height: 2.5rem;
     width: auto;
@@ -631,40 +586,7 @@ ul {
     letter-spacing: 0.025em;
 }
 
-/* --- Estilos do Carrossel Dinâmico (Setas) --- */
-.carousel-btn {
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    background: transparent;
-    border: none;
-    font-size: 2rem;
-    color: #6b7280;
-    cursor: pointer;
-    z-index: 50;
-    padding: 1rem;
-    transition: color 0.3s, transform 0.2s;
-    display: none;
-}
-
-.carousel-btn:hover {
-    color: var(--orange-custom);
-    transform: translateY(-50%) scale(1.2);
-}
-
-.btn-prev {
-    left: -3rem;
-}
-
-.btn-next {
-    right: -3rem;
-}
-
-/* =========================================
-CARROSSEL DE NOTÍCIAS (HERO STYLE)
-========================================= */
-
-/* --- Container Principal --- */
+/* CARROSSEL DE NOTÍCIAS */
 .news-container {
     position: relative;
     max-width: 1100px;
@@ -672,7 +594,6 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     padding: 0 1.5rem;
 }
 
-/* --- Wrapper do Card (Flexbox) --- */
 .carousel-inner {
     display: flex;
     background-color: #fff;
@@ -682,7 +603,6 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     min-height: 400px;
 }
 
-/* --- Lado da Imagem (Esquerda - 60%) --- */
 .carousel-image-box {
     flex: 1.5;
     position: relative;
@@ -697,7 +617,6 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     display: block;
 }
 
-/* Indicadores (Bolinhas) sobre a imagem */
 .carousel-indicators {
     position: absolute;
     bottom: 20px;
@@ -725,19 +644,6 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     transform: scale(1.2);
 }
 
-/* --- Lado do Texto (Direita - 40%) --- */
-.carousel-text-box {
-    flex: 1;
-    background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3rem;
-    position: relative;
-}
-
-/* Tag "Destaque" */
 .news-tag {
     display: inline-block;
     align-self: flex-start;
@@ -751,7 +657,6 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     text-transform: uppercase;
 }
 
-/* Título da Notícia */
 .news-title {
     font-size: 1.8rem;
     line-height: 1.3;
@@ -760,7 +665,6 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     font-weight: 700;
 }
 
-/* Subtítulo/Descrição */
 .news-subtitle {
     font-size: 1rem;
     opacity: 0.9;
@@ -769,7 +673,6 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     line-height: 1.6;
 }
 
-/* Botão "Ler Mais" */
 .btn-news {
     text-decoration: none;
     color: white;
@@ -789,18 +692,17 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     gap: 12px;
 }
 
-/* --- Setas de Navegação (Botões Redondos) --- */
 .carousel-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 20;
     background-color: #ffffff;
-    color: #333;
+    color: var(--leg-orange);
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: none;
+    border: var(--leg-orange) 2px solid;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     font-size: 1.2rem;
     cursor: pointer;
@@ -811,7 +713,7 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
 }
 
 .carousel-btn:hover {
-    background-color: var(--orange-custom, #ff6b00);
+    background-color: var(--leg-orange);
     color: white;
     transform: translateY(-50%) scale(1.15);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -825,9 +727,20 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     right: -25px;
 }
 
-/* --- Animação de Fade (Troca de Slide) --- */
+/* Animação (Carrossel) */
 .fade-anim {
     animation: fadeEffect 0.5s ease-out;
+}
+
+.carousel-text-box {
+    flex: 1;
+    background: linear-gradient(135deg, #8e44ad 0%, #9b59b6 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    position: relative;
 }
 
 @keyframes fadeEffect {
@@ -858,7 +771,7 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     }
 }
 
-/* Menu hambúrguer escondido por padrão no desktop */
+/* RESPONSIVIDADE */
 .mobile-menu-icon {
     display: none;
     background: none;
@@ -868,84 +781,7 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     cursor: pointer;
 }
 
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 900px) {
-
-    .carousel-btn {
-        display: none;
-    }
-
-    .carousel-inner {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .carousel-image-box {
-        flex: none;
-        height: 250px;
-        width: 100%;
-    }
-
-    .carousel-text-box {
-        padding: 2rem 1.5rem;
-        text-align: center;
-        align-items: center;
-    }
-
-    .news-tag {
-        align-self: center;
-    }
-
-    .news-title {
-        font-size: 1.4rem;
-    }
-
-    .news-subtitle {
-        font-size: 0.9rem;
-    }
-
-    .footer image{
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .mobile-menu-icon {
-        display: block;
-        z-index: 1001;
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        background-color: #4B286D;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transition: 0.4s;
-        z-index: 1000;
-        box-shadow: -5px 0 15px rgba(0,0,0,0.3);
-    }
-
-    .nav-menu.active {
-        right: 0;
-    }
-
-    .nav-menu li {
-        margin: 20px 0;
-    }
-
-    .nav-menu li a {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 480px) {
+@media (min-width: 480px) {
     .breadcrumb {
         margin-top: 50px;
         text-align: center;
@@ -986,27 +822,40 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
     }
 }
 
-
 @media (max-width: 768px) {
+    .general-indicators-wrapper {
+        flex-direction: row;
+    }
+
     .mobile-menu-icon {
         display: block;
         position: relative;
         z-index: 10001;
     }
 
+    .main-header {
+        position: relative;
+        z-index: 10000;
+    }
+
     .nav-menu {
         background-color: rgba(13, 12, 17, 0.95);
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+
+        justify-content: center;
+        align-items: center;
         display: flex;
         position: fixed;
-        top: -100vh; 
+        top: -100vh;
         left: 0;
+        right: 0;
         width: 100%;
-        height: auto;
-        flex-direction: column ;
-        padding: 80px 0 30px 0 ;
-        transition: all 0.5s ease-in-out ;
-        
-        z-index: 10000 !important; 
+        height: 85vh;
+        flex-direction: column;
+        padding: 80px 0 30px 0;
+        transition: all 0.5s ease-in-out;
+
+        z-index: 10000 !important;
         visibility: hidden;
         opacity: 0;
     }
@@ -1015,31 +864,92 @@ CARROSSEL DE NOTÍCIAS (HERO STYLE)
         top: 0 !important;
         visibility: visible;
         opacity: 1;
-    }
-
-    .main-header {
-        position: relative;
-        z-index: 10000;
+        margin-bottom: 10px;
     }
 
     .nav-menu li {
-        margin: 15px 0 ;
+        margin: 15px 0;
         text-align: center;
         width: 100%;
     }
 
     .nav-menu li a {
-        color: #fff ;
+        color: #fff;
         font-size: 1.2rem;
         font-weight: 600;
         text-decoration: none;
     }
-}
 
-@media (max-width: 768px) {
     .footer-logos {
         align-items: center;
         justify-content: center;
         text-align: center;
+    }
+
+    .imagem-principal {
+        max-height: 350px;
+        margin: 20px 0;
+    }
+
+    .hero-brand-img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .carousel-btn {
+        display: none;
+    }
+
+    .carousel-inner {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .carousel-image-box {
+        flex: none;
+        height: 250px;
+        width: 100%;
+    }
+
+    .carousel-text-box {
+        padding: 2rem 1.5rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .news-tag {
+        align-self: center;
+    }
+
+    .news-title {
+        font-size: 1.4rem;
+    }
+
+    .news-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .footer image {
+        align-items: center;
+    }
+
+    .hero-brand-img {
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .indicators-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
     }
 }

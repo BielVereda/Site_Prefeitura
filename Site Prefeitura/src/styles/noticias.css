@@ -1,3 +1,4 @@
+/* IMPORTANDO O CSS BASE */
 @import url("./style.css");
 
 body {
@@ -10,6 +11,7 @@ body {
     padding-bottom: 80px;
 }
 
+/* HERO */
 .hero-header {
     text-align: center;
     padding: 40px 0;
@@ -30,6 +32,7 @@ body {
     background-image: url('./../assets/images/jpg/ceu-silvio-santos.jpg');
 }
 
+/* BREADCRUMB */
 .breadcrumb {
     margin-top: 100px;
     margin-bottom: 0;
@@ -73,6 +76,7 @@ body {
     object-fit: cover;
 }
 
+/* CARROSSEL */
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -143,6 +147,7 @@ body {
     opacity: 0.9;
 }
 
+/* LISTA DE NOTÍCIAS */
 .recent-news-list h3 {
     font-size: 1.6rem;
     color: #444;
@@ -192,7 +197,6 @@ body {
 }
 
 /* --- LOGICA DO MENU HAMBURGUER --- */
-
 .mobile-menu-icon {
     display: none;
     background: none;

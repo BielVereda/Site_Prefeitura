@@ -1,6 +1,9 @@
+/* IMPORTANDO O CSS BASE */
 @import url("./noticias.css");
 
-/*border-left: 5px solid #4B286D;*/
+.hero-wrapper {
+    background-image: url('./../assets/images/jpg/ibirapuera2.jpg');
+}
 
 .recent-news-list {
     max-width: 900px;
@@ -17,42 +20,30 @@
     text-align: left;
 }
 
+.recent-news-list h4 {
+    text-align: left;
+    color: #1a1a1a;
+    font-size: 1.0rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
 .recent-news-list h5 {
-    border-left: 5px solid #4B286D;
-    margin-left: 5px;
+    border-left: 5px solid #643791;
+    padding-left: 10px;
+    margin-bottom: 10px;
 }
 
 .recent-news-list span {
     display: block;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1.7;
     color: #333;
     margin-bottom: 20px;
     text-align: left;
 }
 
-.imagem-principal {
-    width: 100%;
-    max-height: 500px;
-    overflow: hidden;
-    border-radius: 15px;
-    margin: 30px 0;
-}
-
-#imagem-noticia {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.recent-news-list h4 {
-    text-align: left;
-    font-size: 1.4rem;
-    margin-top: 40px;
-    color: #1a1a1a;
-}
-
-/* Imagem Principal */
 .imagem-principal {
     width: 100%;
     height: auto;
@@ -68,19 +59,11 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    height: auto;
+    aspect-ratio: 16 / 9;
 }
 
-/* Subtítulos (H4) */
-.recent-news-list h4 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1a1a1a;
-    margin: 40px 0 20px 0;
-    text-transform: uppercase;
-    padding-left: 15px;
-}
-
-/* Ajuste Responsivo */
+/* RESPONSIVIDADE */
 @media (max-width: 768px) {
     .recent-news-list h3 {
         font-size: 1.8rem;
@@ -93,4 +76,52 @@
     .imagem-principal {
         max-height: 300px;
     }
+
+    .content-card {
+        padding: 20px;
+    }
+
+    .recent-news-list {
+        padding: 0 15px;
+    }
+
+    .recent-news-list h3 {
+        font-size: 1.0rem;
+        line-height: 1.3;
+        margin-top: 30px;
+    }
+
+    .recent-news-list h5 {
+        margin-top: 20px;
+    }
+
+    .recent-news-list span {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .breadcrumb {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    
+    .hero-titles {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recent-news-list h3 {
+        font-size: 1.5rem;
+    }
+
+    .recent-news-list h5 {
+        font-size: 0.8rem;
+    }
+
+    .imagem-principal {
+        max-height: 250px;
+        border-radius: 10px;
+    }
+
 }
