@@ -1,10 +1,6 @@
 /* IMPORTANDO O CSS BASE */
 @import url("./noticias.css");
 
-.hero-wrapper {
-    background-image: url('./../assets/images/jpg/ibirapuera2.jpg');
-}
-
 .recent-news-list {
     max-width: 900px;
     margin: 0 auto;

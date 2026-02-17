@@ -1,0 +1,5 @@
+@import url("./noticia-do-dia.css");
+
+.hero-wrapper {
+    background-image: url('./../assets/images/jpg/polo-gastronomico2.jpeg');
+}
