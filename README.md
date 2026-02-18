@@ -64,11 +64,12 @@ ACESSO AO SITE: https://site-prefeitura.vercel.app/
 
 <img width="96" height="499" alt="screencapture-127-0-0-1-5500-Site-Prefeitura-index-html-2026-02-15-07_34_32" src="https://github.com/user-attachments/assets/9da92c0e-33a6-4f48-87ab-38b5f693aeec" />
 
+---
 **Página de Notícias:**
 
 <img width="192" height="290" alt="screencapture-127-0-0-1-5500-Site-Prefeitura-src-pages-noticias-html-2026-02-15-07_35_22" src="https://github.com/user-attachments/assets/611bfcc9-3bbb-44b6-940d-b7722f940dd3" />
 
-<img width="96" height="319" alt="screencapture-127-0-0-1-5500-Site-Prefeitura-src-pages-noticias-html-2026-02-15-07_36_42" src="https://github.com/user-attachments/assets/dba0d98c-fa33-4251-9b4b-f43db08a7b05" />
+<img width="96" height="321" alt="screencapture-127-0-0-1-5500-Site-Prefeitura-src-pages-noticias-html-2026-02-18-20_31_40" src="https://github.com/user-attachments/assets/35caaf11-5f29-4a3c-b4c1-d1661a8824dc" />
 
 ---
 Créditos **© 2026 Prefeitura Municipal de São Paulo** Criado com ⚡ por **BielVereda**
