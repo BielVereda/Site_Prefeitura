@@ -54,8 +54,9 @@ O projeto foi construído do zero, priorizando performance, organização e fide
 - Cards de Conteúdo: Design "puro" com bordas arredondadas e elevação visual via box-shadow.
 - Breadcrumbs Dinâmicos: Trilha de navegação para facilitar a orientação do usuário.
 ---
+## 🚀 Acesse o Projeto
 
-[🔗 Acesse o Projeto]([https://seusite.com](https://site-prefeitura.vercel.app/))
+[🔗 Acesse o Projeto](https://site-prefeitura.vercel.app/)
 
 ---
 ## 📸 Demonstração Visual Desktop/Mobile
